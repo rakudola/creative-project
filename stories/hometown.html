@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  
+  <!--stylesheet on server-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Template | 5354</title>
+</head>
+
+<body>
+  <!--begin navigation bar-->
+  <nav id="top" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../index.html"><b>5354</b></a>
+    
+    <!--collapsed menu button-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon">≡</span>
+    </button>
+  
+    <!--actual menu-->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../howtouse.html">HOW TO USE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../library.html">LIBRARY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--end navigation bar-->
+  
+  <div id="hero">
+    <a href="https://www.pexels.com/photo/green-concrete-building-2067112/"><img alt="Green Concrete Building by Abby Chung" src="../images/apartments.jpg"></a>
+    <div id="hero-text-block">
+      <h1 id="hero-h1">Hometown</h1>
+      <p><strong>Status</strong>: Complete</p>
+    </div>
+  </div>
+  
+  <div class="story-info">
+    <p><strong>Genre</strong>: Action(?) | <strong>Authors</strong>: LY</p>
+    <p><strong>Current Endings</strong>: The End (For Now)</p>
+    <p>You and your friend just wanted to do your neighbor a quick favor. This somehow results 
+      in the both of you being held at gunpoint in a mafia car.</p>
+    <br />
+
+    <!--user input-->
+    <p>(All fields are optional. Only fill them out if you want your information to appear in the story.)</p>
+    <form id="info">
+        First Name: <input type="text" name="fname"><br><br>
+        <!--Last Name: <input type="text" name="lname"><br><br>-->
+        Hometown (U.S.): <input id="weatherInput" type="text"></input><br><br>
+    <button id="weatherSubmit" type="submit" value="Submit" onclick="userInfo()">Submit</button>
+    </form>
+  </div>
+  
+  <div class="story">
+    <div class="story-content">
+    <!--<p>My name is <span class="givenName">Cam</span> <span class="familyName">Hollinger</span></p>
+    <p>In <span class="currentCity">Springville</span>, it is <span class="tianqiTemp">54</span> degrees.</p>
+    <p>The high is <span class="tianqiHigh"></span>, the low is <span class="tianqiLow"></span>, and 
+        the humidity is <span class="tianqiHum"></span>%.</p>
+    <p>Expect <span class="tianqiDesc">light rain</span> today.</p>
+    -->
+    <h2 id="ch1-begin">Chapter 1</h2>
+    
+    <p>You know what? You've made some dumb decisions in the past. That's a fair statement. You 
+        totaled your mom's car in high school, you almost failed out of university, you graduated 
+        with a useless degree and wandered into Taiwan to teach English even though you didn't 
+        know a single word of Mandarin. Whatever. You figured it out. Life keeps moving.</p>
+        
+    <p>This, though? This whole situation is—</p>
+    
+    <p>"Hey," the middle schooler in the passenger seat says, a smile across 
+        his face as he taps a finger on the gun he's got pressed to your temple. "Are you working 
+        with Tanaka or not?" Perfect English.</p>
+        
+    <p>You're glad you're in the backseat, because Mark—the only friend from high school you've 
+        kept in touch with—looks like he's about to pass out, too. Solidarity.</p>
+        
+    <p>"I—I didn't know what was in the bag," you stutter out, because that seems like the real 
+        issue this kid and the lady driving have with you: something's in the bag that Mr. 
+        Tien-chung (your very polite neighbor who helped you move in and brought you bread) asked 
+        you to take to his friend, and also there's a middle schooler with bright blue hair 
+        holding a gun to your head what is happening why is this happening?!</p>
+        
+    <p>"Oh, that's nice!" He chirps. "I don't care! Answer the question." </p>
+    
+    <p>The lady at the wheel jerks the car past the railing, and now you're all careening down 
+        a mountain in some tin can of a car, and if this kid and his gun don't kill you, the final 
+        impact probably will.</p>
+        
+    <p>The gun leaves your head by the grace of the laws of physics alone.</p>
+    
+    <p>Mark pulls a Ring Pop out of his pocket. He's crying.</p>
+    
+    <p>"Will you marry me?"</p>
+    
+    <p>"What?"</p>
+    
+    <p>"I don't wanna die single!"</p>
+    
+    <p>"You're engaged!!"</p>
+    
+    <p>The car slams to a stop. The seatbelt slams into your chest, inertia knocking the wind out 
+      of you.</p>
+      
+    <p>You barely get a second to gasp for air before the kid in the front seat has his gun 
+      trained on the both of you again, that cheerful smile still on his face.</p>
+      
+    <p>"Get out of my car," he says cheerily. "We're stopping here for lunch!"</p>
+    
+    <p>You unbuckle the seatbelt and get out of the car. The kid's staring Mark down like a hawk, 
+      and the lady that was driving is watching your every move. She probably has a gun on her 
+      person. You'd rather not find out.</p>
+      
+    <p>You glance around.</p>
+    
+    <p>Wait. You know this place.</p>
+    
+    <p>The restaurant you're in front of is one you frequent, actually. It's tiny and run by one 
+      of the coolest guys you've ever made friends with. The guy's barely out of high school and 
+      trying to support his siblings, and, well, you probably should've known that this thing 
+      was a mafia front. Somehow. Why is this happening to you? Is this karmic retribution from 
+      a past life?</p>
+      
+    <p>Mark sidles up to you under the careful watch of whatever triad members just herded you 
+      out of their car.</p>
+      
+    <p>"What's the weather like in <span class="currentCity">Springville</span>?" You ask. You're 
+      not sure why. Maybe you're just homesick and also acutely aware that you probably won't 
+      see your apartment again, much less your hometown.</p>
+      
+    <p>"<span class="tianqiTemp">54</span> Fahrenheit, <span class="tianqiDesc">light 
+      rain</span>," he says, and you know he hasn't had an opportunity to check recently. How 
+      does he do it?</p>
+      
+    <p>You march into the restaurant to Chia-wei's standard giant grin and "Hey, good to see you. 
+      What can I—"</p>
+      
+    <p>And then he sees the psychopaths trail in behind you.</p>
+    
+    <p>"—get for you," he finishes. You aren't great at subtler hints in this language yet, but 
+      it's not hard to tell he's less than pleased.</p>
+      
+    <p>"Oh, the usual," Mr. Middle Schooler says pleasantly, easily slipping into Mandarin.</p>
+      
+    <p>Chia-wei points at you and Mark, eyes still glued to the kid with blue hair. "Those two 
+      aren't in on anything. They can barely find their way around town. What's wrong with 
+      you?"</p>
+      
+    <p>The lady who was driving is behind you, so you don't see so much as feel the death glare 
+      she sends at Chia-wei. The temperature drops a few degrees. You're not sure if you're glad 
+      that the place is empty or not.</p>
+      
+    <p>"I would hardly call moving drugs for Tanaka 'not in on anything,'" the kid shoots back. 
+      "Do you still serve youtiao?"</p>
+      
+    <p>"Of course. Stop messing with the foreigners and I'll give you extra."</p>
+    
+    <p>"Only if they tell me what I want to know!"</p>
+    
+    <p>Chia-wei's dropped his smile by this point, opting for a face loudly signaling 
+      a migraine. "And you've gotten a whole lot of useful information out of them already, 
+      right?"</p>
+      
+    <p>"Hm... I know what the weather is in <span class="currentCity">Springville</span>!" 
+      Another big smile.</p>
+      
+    <p>"Look, Haruki, they probably just thought they were doing a favor." Chia-wei's pinching 
+      his nose bridge. "If you want actual information, you've just let Tanaka know you're after 
+      him, and now he's probably on the next flight to Korea."</p>
+      
+    <p>Haruki pouts thoughtfully. "Hm. Yeah. That makes sense."</p>
+    
+    <p>Chia-wei pulls his fingers away from his face, mild confusion painted on it. "What, you're 
+      not gonna argue?"</p>
+      
+    <p>Haruki shrugs. "We've been on this for three months, and I'm running out of vacation days. 
+      I really just want this entire thing over and done with."</p>
+      
+    <p>"And it didn't occur to you that these two were probably in contact with Tanaka before you 
+      stuffed them in your car at gunpoint?"</p>
+      
+    <p>"I've slept a grand total of 12 hours this past week," the woman finally says. "Can we 
+      get our food and leave?"</p>
+      
+    <p>"Please do," Chia-wei says.</p>
+    
+    <p>She rattles off her and Haruki's orders. Chia-wei gives her the minimum needed attention 
+      before turning to you and Mark, exhausted but friendly smile back in place.</p>
+      
+    <p>"Mark, <span class="givenName">Cam</span>, what can I get you two? And don't worry about 
+      paying." He jerks a thumb at the actual mafia members that he just lectured. "They can 
+      cover it."</p>
+      
+    <p>"Yeah! It's on me," the <i>middle schooler</i>, in a uniform you easily recognize as the 
+      one three blocks from your apartment complex, says, pulling one of those insane VIP 
+      Golden Luxe Exclusive credit cards out of who-know-where like he wasn't holding a gun to 
+      your head seven minutes ago.</p>
+      
+    <p>"Uh," you say, something vaguely resembling etiquette trying to kick in. "You—You don't 
+      have to—"</p>
+      
+    <p>"I'm not Taiwanese. Don't play that etiquette game with me." He slides the card towards 
+      Chia-wei. "It's an apology, anyway."</p>
+      
+    <p>Chia-wei pretty much hovers over you and Mark for the rest of the meal, chatting about 
+      whatever, until Haruki and the lady whose name you don't know start packing up to leave.</p>
+      
+    <p>Well, Chia-wei still stands there, because Haruki walks up to you with something in his 
+      hands.</p>
+      
+    <p>"So, um. Sorry for kidnapping you," he says too brightly for the words that just came out 
+      of his mouth. "Here's my business card. If you need anything, we'll find a way to make it up 
+      to you."</p>
+      
+    <p>He holds out the card with both hands like exchanging business cards is a thing middle 
+      schoolers do. Or maybe they do. You haven't been in middle school for a while. Maybe this 
+      is the new Pokemon.</p>
+      
+    <p>You take the card, anyway. It's entirely in Japanese, but you're pretty sure you see the 
+      word for "hospital" on it.</p>
+      
+    <p>"Anyway, we need to go hunt down the guy that tried to get you into drug trafficking, and 
+      our flight leaves in a few hours. See you." He waves and wanders out with the lady.</p>
+      
+    <p>The room fades out to silence once they're out the door, save Mark slurping his noodles 
+      like he's going to starve if he doesn't.</p>
+      
+    <p>"So," Chia-wei says slowly. "How did you like your brush with the yakuza?"</p>
+    
+    <p>"I vote we never do that again," Mark says around his noodles. "Anyway, fun fact: 
+      <span class="currentCity">Springville</span>'s at <span class="tianqiHum">32</span> 
+      percent humidity right now."</p>
+      
+    <p>"Is it," you mumble, wondering how much money it would cost to bury today's events 
+      in dumplings.</p>
+      
+      <h3>The End (For Now)</h3>
+    
+      <div class="center-text">
+        <a href="#top"><button class="col-button">Back to top</button></a>
+        <a href="../library.html"><button class="col-button">Back to Library</button></a>
+      </div>
+      <hr />
+    
+    </div>
+  </div>
+  
+  <!--begin footer-->
+  <footer>
+    <p><a href="https://github.com/rakudola/creative-project">GITHUB REPOSITORY</a></p>
+    <p><a href="../index.html">Back to Home Page</a></p>
+    <p>click photos for photo source</p>
+  </footer>
+  <!--end footer-->
+  
+  <!--form scripts-->
+  <script type="text/javascript" src="../scripts/userName.js"></script>
+  <script type="text/javascript" src="../scripts/weatherapi.js"></script>
+  
+  <!--bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
