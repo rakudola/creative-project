@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!--stylesheet on server-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Fine Arts Department | 5354</title>
+</head>
+
+<body>
+  <!--begin navigation bar-->
+  <nav id="top" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../index.html"><b>5354</b></a>
+
+    <!--collapsed menu button-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon">≡</span>
+    </button>
+
+    <!--actual menu-->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../howtouse.html">HOW TO USE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../library.html">LIBRARY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--end navigation bar-->
+
+  <div id="hero">
+        <a href="https://www.pexels.com/photo/assorted-print-painting-lot-2123337/"><img alt="Assorted Print Painting Lot by Andrew Neel" src="../images/museum.jpg"></a>
+    <div id="hero-text-block">
+      <h1 id="hero-h1">Fine Arts Department</h1>
+      <p><strong>Status</strong>: Complete</p>
+    </div>
+  </div>
+
+
+  <div id="app">
+    <div class="story-info">
+      <p><strong>Genre</strong>: Stupid | <strong>Authors</strong>: LY & TM</p>
+      <p><strong>Current Endings</strong>: The End, Probably</p>
+      <p>Just another gig with your quintet at an upscale art museum. Certainly no art theft shenanigans happening in the background.</p>
+      <br />
+
+      <!--user input-->
+      <p>(All fields are optional. Only fill them out if you want your information to appear in the story.)</p>
+      <p><strong>WARNING: foreign characters may be rendered.</strong> If you are getting boxes or unfamiliar characters, 
+        you can press the "Submit" button a few times before the service used on this page starts denying your requests.</p>
+      <form id="info">
+        First Name: <input type="text" name="fname"><br><br> Last Name: <input type="text" name="lname"><br><br>
+      </form>
+      <button v-on:click.prevent="fetchREST" onclick="userInfo()">Submit</button>
+    </div>
+
+    <div class="story">
+      <div class="story-content">
+        <!--<p>My name is <span class="givenName">Alice</span> <span class="familyName">Yu</span></p>-->
+        <!--{{name}} {{surname}}, a {{gender}} from {{region}}-->
+        <!--{{subPro}} is doing {{posAdj}} very best; this is {{posPro}}; do you like {{objPro}}?-->
+        <h2 id="ch1-begin">Chapter 1</h2>
+
+        <p>Being in a high-profile professional string quintet has its advantages. Slogging 
+          through Pachelbel's Canon for the third performance in a month is not one of them.</p>
+          
+        <p>The museum you're performing in is one of those fancy art museums designed by some 
+          bigwig highbrow architect(s) ft. some bigwig highbrow interior designer(s), and it shows in 
+          the lines of construction, the artful columns, the natural lighting, the avant-garde 
+          use of color and form. (That's a lot of art words you aren't entirely sure on the meaning 
+          of, but your friend, fellow violinist, and resident art forger {{name}} has said them a 
+          few times each, and it's important to be adaptable in your line of work.)</p>
+          
+        <p>All the art words in the world, unfortunately, cannot hide the fact that your cellist 
+          is literally asleep. If anyone bothered to look in your ensemble's general direction, 
+          that would be more of an issue. As it stands, she's staying on beat a lot better than 
+          last time.</p>
+          
+        <p>{{name}} leans over to you and says, seamlessly matching the voice level of the room, 
+          "Should we wake her up?"</p>
+          
+        <p>"You're concert master," you reply with enough of a shrug to fudge the next slur. 
+          Exactly zero people notice.</p>
+          
+        <p>{{name}} grins at you. "Can I break into an improv solo?"</p>
+        
+        <p>See, you aren't so far gone that you think letting {{name}} break into what would most 
+          certainly devolve into a very, very bad medley of every song Namewee's released in the 
+          last five years is a <i>good</i> idea. Heavens, no. It sure is an idea that would keep 
+          you from joining your lovely cellist in the realm of the unconscious, though.</p>
+          
+        <p>"You're concert master," you say instead of voicing your true feelings on the matter.</p>
+        
+        <p>{{name}} shoots you a face you aren't sure how to interpret.</p>
+        
+        <p>Before you get a chance to ask {{objPro}} what in the world that's supposed to mean, 
+          the bassist (and unofficial leader, because {{name}} should not be trusted with any 
+          <i>thought</i> of responsibility) stops playing, puts her instrument down entirely, and 
+          walks over to the both of you. You notice a single woman whisper something to the man 
+          she's with and point at your bassist in mild confusion. Nobody else seems to care.</p>
+          
+        <p>"Auction's starting soon," your bassist says. "Play to the end as soon as you can."</p>
+        
+        <p>"Finally," {{name}} sighs.</p>
+        
+        <p>"A tempo," your bassist finishes.</p>
+        
+        <p>{{name}} full-on pouts. "Just because I try to be efficient--"</p>
+        
+        <p>"Double speed isn't efficiency. It's just hard to follow."</p>
+        
+        <p>You tune out their semi-joking argument, because they legiterally had it on the two-
+          hour ride here and bring it up at least once a week.</p>
+          
+        <p>They go for about twelve measures before {{name}} finally says "what's the plan?"</p>
+        
+        <p>The bassist glances at your sleeping cellist and unenthused violist. "We're gonna 
+          slip out while you two are packing up. {{name}}, I'll call you when we need you. Is 
+          your phone on vibrate?"</p>
+          
+        <p>{{name}} pulls out {{posAdj}} phone. "Yeah."</p>
+        
+        <p>"Perfect. We don't need anything big this time around." She leans a little closer to 
+          the both of you and drops to a whisper. "Security's pretty lax."</p>
+          
+        <p>A sparkle flickers to life in {{name}}'s eyes. You definitely are not getting paid 
+          enough for this gig to cover the emotional trauma of whatever's about to happen.</p>
+          
+        <p>Pachelbel's Canon finally draws to an end. You aren't sad at all to see it finally 
+          draw its final pained breaths for the day, and with the speed at which the other 
+          four members of your ensemble are packing up, you aren't alone.</p>
+          
+        <p>Some old guy in a suit sweeps into the front of the room, microphone in hand, and 
+          starts speaking Chinese. You aren't sure what he's saying, but you've been to enough of 
+          these auctions that you know he's probably introducing the piece and donor. (You didn't 
+          bother cramming DuoLingo before your ensemble flew out here, because four out of the 
+          five of you speak it, and you can barely manage English.)</p>
+          
+        <p>{{name}} is eyeing the piece on display with a disconcerting amount of focus.</p>
+        
+        <p>"You like the piece?" You ask, a little curious about anything that can hold {{name}}'s 
+          attention so closely.</p>
+          
+        <p>"Hm," {{name}} says. "It's certainly interesting."</p>
+        
+        <p>Well, that's an incredibly suspicious answer. "Interesting how?"</p>
+        
+        <p>"Tell you later," {{name}} says. "You gonna pack up, or are you gonna carry your 
+          instrument for the rest of the afternoon?"</p>
+          
+        <p>Ah. Yeah. No, thank you. You've already carried this quintet for the last 2 hours.</p>
+        
+        <p>You and {{name}} wave the other three goodbye as they slip into the next section of the 
+          museum.</p>
+          
+        <p>The man on the microphone hands the mic off to some college-looking kid standing next 
+          to him with stark white hair. (Not platinum blond. White.) You knew some kids in high 
+          school with scarily light hair, but this guy's too dark for it to be natural.</p>
+          
+        <p>You don't catch a word of what anyone's saying because you don't speak the language. 
+          {{name}} doesn't catch a word of what anyone's saying, because {{subPro}}'s too busy 
+          leaning over to stage-whisper at you.</p>
+          
+        <p>"He's got a weird accent," {{subPro}} says. "Probably one of those old-money European 
+          donors. That kid with the red hair in the front row keeps mouthing stuff when he 
+          stumbles over words, so she's probably his interpreter."</p>
+          
+        <p>You can barely see the girl {{subPro}}'s referring to from where the both of you are 
+          sitting.</p>
+          
+        <p>"That's pretty impressive," you say. "How'd you figure that one out?"</p>
+        
+        <p>"I'm stupid, not deaf."</p>
+        
+        <p>"Yeah? When's my birthday?"</p>
+        
+        <p>"Why would I know that?"</p>
+        
+        <p>"I told you on the way here."</p>
+        
+        <p>"I don't even know my own birthday. You think I know yours?"</p>
+        
+        <p>{{name}}'s phone vibrates before you can get a word in edgewise.</p>
+        
+        <p>"Oh, sorry," {{subPro}} says, whipping {{posAdj}} phone out of the pocket it's doing 
+          an impression of a blender in. "It's from a colleague. I need to take this."</p>
+          
+        <p>"Go ahead," you say flatly. You already know it's from your bassist.</p>
+        
+        <p>{{name}} flashes you an innocent smile that definitely promises a terribad plan taking 
+          shape in {{posAdj}} mind before stepping out.</p>
+          
+        <p>The guy in the suit is back on the mic, which is a shame. You think the kid with bright 
+          white hair is pretty funky, and you understand both of them equally well anyway.</p>
+          
+        <p>You get all of thirty seconds of respite before the fire alarms go off.</p>
+        
+        <p>The crowd of art snobs loses their collective mind scrambling for the exit. You've 
+          never seen a folding chair get so much airtime. That's probably a record.</p>
+          
+        <p>Oh, wait. You should probably stop acting so calm, because you're not supposed to 
+          know {{name}} almost definitely set them off with a smuggled canister of Axe body spray 
+          and a dollar store lighter.</p>
+          
+        <p>You do your best impression of panicking art snob on your way out of the building 
+          (instrument case in hand, because you're not leaving a $16,000 instrument unattended, 
+          fake fire panic or no) and ever-so-conveniently run into {{name}}.</p>
+          
+        <p>"Wow, someone sure sprayed a whole lot of Axe in the bathroom," {{subPro}} says ever-
+          so-casually.</p>
+          
+        <p>"Why can't you use hairspray like a normal person?" You ask, voice low (and American) 
+          to keep anyone from arresting the two of you on the spot.</p>
+          
+        <p>"Not my style," {{name}} says. "Hey, isn't that the donor?"</p>
+        
+        <p>You tear your gaze from what looks suspiciously like a burn on {{name}}'s fingers to 
+          stare in the direction {{subPro}}'s looking in. Sure enough, it's the guy with the 
+          crazy white hair and his crazy red-haired friend.</p>
+          
+        <p>They're startlingly calm for the situation, lounging on the grass like the museum 
+          they were auctioning a possibly priceless piece of art in isn't on fire. (Well, yeah, 
+          okay, it isn't, but they don't know that.)</p>
+          
+        <p>{{name}}, rather than moving on with {{posAdj}} life, walks straight up to the two of 
+          them, dragging you along for the ride.</p>
+          
+        <p>You aren't surprised to watch {{objPro}} launch into a full conversation with the girl, 
+          leaving you to try to look anywhere but at the guy with the funky hair. He seems 
+          rather unfazed by the fact that he's sitting in the grass in a tailored suit, and that 
+          either means he's the coolest filthy rich kid you will ever have the pleasure of trying 
+          not to stare at or the snobbiest. Spoiled-est? Is that a word?</p>
+          
+        <p>"Oh, English?" {{name}} says out of nowhere, glancing at suit kid.</p>
+        
+        <p>Suit kid blinks up at {{objPro}}. "Only if I have to."</p>
+        
+        <p>Oh. Perfect American accent.</p>
+        
+        <p>"You can always speak Taiwanese instead," the girl with red hair says.</p>
+        
+        <p>"Pass."</p>
+        
+        <p>"You're Ben, then?" {{name}} says. "I'm {{name}} {{surname}}, and this--" {{subPro}} 
+          waves a hand in your direction. "--is <span class="givenName">Alice</span> 
+          <span class="familyName">Yu</span>, the other violinist."</p>
+          
+        <p>"The 'other' violinist?" You scoff.</p>
+        
+        <p>"Anyway, I saw your Renoir," {{name}} says, completely ignoring your existence. What 
+          are friends for, and all that. "Quite impressive."</p>
+          
+        <p>"Thank you," Ben says politely.</p>
+        
+        <p>{{name}} isn't done, because {{subPro}} can never leave a compliment a compliment. 
+          "You should probably use a yellow with better lightfastness next time, though."</p>
+          
+        <p>"I have no idea what you're talking about," Ben says flatly. You also have no idea 
+          what {{name}} is talking about, but not in an evasive way. You just flat-out have no 
+          idea what half of the words {{subPro}} said mean.</p>
+          
+        <p>Red-haired kid is looking incredibly offended, though. Ben remains unperturbed, 
+          but you're a little worried about how he's reaching into his suit jacket.</p>
+          
+        <p>"Uh, {{name}}," you say, not quite sure how to diffuse the situation, but well-versed 
+          in dodging literal bullets.</p>
+          
+        <p>Ben pulls his hand back out and opens it. There are a few pieces of wrapped candy 
+          sitting in his palm.</p>
+          
+        <p>"Want some?" He asks.</p>
+        
+        <p>"Um. No, thank you," you say.</p>
+        
+        <p>He shrugs and rips the wrapper off one, popping the candy in his mouth.</p>
+        
+        <p>"Anyway," {{name}} says, because, again, {{subPro}} has no idea when enough is enough. 
+          "Who forged it?"</p>
+          
+        <p>Wait. Forged?</p>
+        
+        <p>The red-haired girl looks like she's planning to jump {{name}} in a dark alley, but 
+          Ben says "Me."</p>
+          
+        <p>"Ben," red-haired girl says, steel in her voice.</p>
+        
+        <p>"Whatever. It was ugly, anyway," Ben says. "Why do you want to know, {{surname}}?"</p>
+        
+        <p>"If you're just looking for cash, you can outsource the con," {{name}} says far too 
+          loudly. "Have you considered working on a team before?"</p>
+          
+        <p>"We're a team," red-haired girl growls.</p>
+        
+        <p>"Yeah," Ben says. "I'm majoring in screwing with the fine art scene. 5 more credits 
+          until the FBI shows up on my ugly apartment doorstep and shoots me through the head 
+          for crimes against French Impressionism."</p>
+          
+        <p>The rest of your quintet stumbles onto the scene exactly then. Your cellist, still 
+          obviously half-asleep, stumbles on the pavement, and the vase the five of you were hired 
+          to steal almost falls out of her case and onto the pavement.</p>
+          
+        <p>You all sit in a mildly uncomfortable silence for a few seconds longer than socially 
+          acceptable.</p>
+          
+        <p>"How much is membership?" Ben asks. "I have 3 bucks in my bank account."</p>
+        
+        <h3>The End, Probably</h3>
+
+        <div class="center-text">
+          <a href="#top"><button class="col-button">Back to top</button></a>
+          <a href="../library.html"><button class="col-button">Back to Library</button></a>
+        </div>
+        <hr />
+
+      </div>
+    </div>
+  </div>
+
+  <!--begin footer-->
+  <footer>
+    <p><a href="https://github.com/rakudola/creative-project">GITHUB REPOSITORY</a></p>
+    <p><a href="../index.html">Back to Home Page</a></p>
+    <p>click photos for photo source</p>
+  </footer>
+  <!--end footer-->
+
+  <!--form script-->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script type="text/javascript" src="../scripts/userName.js"></script>
+  <script type="text/javascript" src="../scripts/personapi.js"></script>
+
+  <!--bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

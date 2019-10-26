@@ -3,30 +3,49 @@
 var app = new Vue({
   el: '#app',
   data: {
-    name: 'John',
-    surname: 'Doe',
-    gender: 'male',
-    region: "'Murca",
-    sp: 'he',
-    op: 'him',
-    pa: 'his',
-    pp: 'his',
+    name: 'Bichang',
+    surname: 'Xin',
+    gender: 'female',
+    region: "Taiwan",
+    pronouns: [],
+    sp: '',
+    op: '',
+    pa: '',
+    pp: '',
   },
   computed: {
-    pronounTime() {
+    subPro() {
       if (this.gender === 'male') {
-        this.sp = 'he';
-        this.op = 'him';
-        this.pa = 'his';
-        this.pp = 'his';
+        return 'he';
       }
-      else {
-        this.sp = 'she';
-        this.op = 'her';
-        this.pa = 'him';
-        this.pp = 'hers';
+      else if (this.gender === 'female') {
+        return 'she';
       }
-    }
+    },
+    objPro() {
+      if (this.gender === 'male') {
+        return 'him';
+      }
+      else if (this.gender === 'female') {
+        return 'her';
+      }
+    },
+    posAdj() {
+      if (this.gender === 'male') {
+        return 'his';
+      }
+      else if (this.gender === 'female') {
+        return 'her';
+      }
+    },
+    posPro() {
+      if (this.gender === 'male') {
+        return 'his';
+      }
+      else if (this.gender === 'female') {
+        return 'hers';
+      }
+    },
   },
   methods: {
     fetchREST() {
